@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div id="main">
+        <form action="" name="form">
+        <input type="text" class="display" name="display">
+    </form>
+    <table>
+        <tr>
+            <td><input type="button" id="button" value="C" onclick="clearAll()" ></td>
+            <td><input type="button" id="button" value="CE" onclick="clean()"></td>
+            <td><input type="button" id="button" value="÷" onclick="insert('/')"></td>
+            <td><input type="button" value="×" id="button" onclick="insert('*')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="1" id="button" onclick="insert(1)"></td>
+    <td><input type="button" value="2" id="button"  onclick="insert(2)" ></td>
+    <td><input type="button" value="3" id="button"  onclick="insert(3)"></td>
+    <td><input type="button" value="-" id="button"  onclick="insert('-')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="4" id="button"  onclick="insert(4)"></td>
+    <td><input type="button" value="5" id="button"  onclick="insert(5)"></td>
+    <td><input type="button" value="6" id="button"  onclick="insert(6)"></td>
+    <td><input type="button" value="+" id="button"  onclick="insert('+')"></td>
+</tr>
+<tr>
+    <td><input type="button" value="7" id="button"  onclick="insert(7)"></td>
+    <td><input type="button" value="8" id="button"  onclick="insert(8)"></td>
+    <td><input type="button" value="9" id="button"  onclick="insert(9)"></td>
+    <td rowspan="5" > <input type="button" value="=" id="button"  onclick="calculate()" style="height: 100px;"></td>
+</tr>
+<tr>
+    <td colspan="2"><input type="button" value="0" id="button"  onclick="insert(0)" style="width: 106px;"></td>
+    <td><input type="button" value="." id="button"  onclick="insert('.')" ></td>
+    
+
+</tr>
+    </table>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

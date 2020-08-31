@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Sign Up</title>
+</head>
+<body>
+ <button class=" btn btn-primary myButton ">Sign Up</button>
+ <div class="popupWrapper">
+     <div class="popup">
+     <div class="popupClose">X</div> 
+        
+            <div class="popupContent">
+                <form action="">
+                   <div class="form-group">
+                       <label for="uName">Username</label>
+                       <input type="text" id = "uName" class="form-control" required>
+                   </div>
+                   <div class="form-group">
+                    <label for="emaill">Email</label>
+                    <input type="email" class = "form-control" name="" id="emaill" required>
+                   </div>
+                   <div class="form-group">
+                       <label for="pass">Password</label>
+                       <input type="password" class="form-control" id="pass" required>
+                   </div>
+                   <p id="myPara">Make sure it's at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+                </form>
+                <button class="btn btn-success submitBtn ">Submit</button>
+                <p id="myPara">By clicking “Submit”, you agree to our Terms of Service and Privacy Statement. We’ll occasionally send you account related emails.</p>
+            </div>
+       </div>
+     </div>
+<script src="popup.js"></script>
+</body>
+</html>

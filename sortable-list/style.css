@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.draggable-list {
+  list-style-type: none;
+}
+
+.draggable-list li {
+  display: flex;
+}
+
+.draggable-list li.correct .name {
+  color: rgb(27, 240, 27);
+}
+
+.draggable-list li.incorrect .name {
+  color: rgb(226, 17, 17);
+}
+
+.draggable-list li.over .draggable {
+  background-color: #dfe4ea;
+}
+
+.draggable {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid lightgray;
+  width: 400px;
+  background-color: rgb(255, 254, 254);
+  color: black;
+}
+
+.number {
+  height: 60px;
+  width: 60px;
+  background-color: #95a5a6;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.name {
+  margin: 10px 20px;
+}
+
+.check-order {
+  background-color: #95a5a6;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.check-order:focus {
+  outline: none;
+}
+
+.check-order:active {
+  transform: scale(0.98);
+}

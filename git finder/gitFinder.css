@@ -1,0 +1,29 @@
+    .container{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .searchArea{
+    margin-top: 150px;
+    /* font-size: 27px; */
+    color: #b2bec3;
+    font-weight: lighter;
+    /* letter-spacing: 0.1em; */
+    }
+
+    .searchArea p{
+        letter-spacing: 0.1em;
+        font-size: 13px;
+    }
+
+    .imgs{
+        width: 100%;
+    }
+
+    .para{
+font-size: small;
+    }
+
+    .content{
+        margin-top: 70px;
+    }
+

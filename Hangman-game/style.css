@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.svg-container {
+  fill: transparent;
+  /* background-color: rgb(92, 96, 97); */
+  stroke: #fff;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+.figure-part {
+  display: none;
+}
+
+.wrong-letters {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.wrong-letters p {
+  margin: 5px 0px;
+  color: #ed4c67;
+}
+.wrong-letters span {
+  font-size: 20px;
+}
+
+.word {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.letter {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 18px;
+  border-bottom: 3px solid #12cbc4;
+  margin: 0px 5px;
+  height: 50px;
+  width: 20px;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background-color: #2d98da;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.popup-container button {
+  background-color: #fff;
+  border: 0;
+  padding: 10px 10px;
+  margin: 5px;
+  color: #2d98da;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.popup-container button:focus {
+  outline: 0;
+}
+
+.popup-container button:active {
+  transform: scale(0.98);
+}
+
+.notification {
+  background-color: #2d3436;
+  color: #fff;
+  padding: 10px 5px;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: -50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.notification.show {
+  transform: translateY(-50px);
+}

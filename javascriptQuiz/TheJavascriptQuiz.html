@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    <title>The Javascript Quiz</title>
+</head>
+<body>
+
+    <!-- intro section -->
+    <div class="intro bg-white my-3 text-center">
+       
+        <div class="container">
+            <h2 class="display-3 text-primary my-3">The Javascript Quiz</h2>
+        </div>
+    </div>
+
+    <!-- the score section -->
+    <div class="result bg-light py-3 text-center d-none text-secondary">
+        <div class="container lead">
+            <p >You're <span class="text-primary display-4 p-3">0%</span>correct!</p>
+        </div>
+    </div>
+    <!-- quiz section -->
+<div class="quiz py-4 bg-primary">
+    <div class="container">
+        <h2 class="text-white my-5">Here are the questions...</h2>
+      <form  class="quiz-form text-white">
+          <div class="my-5">
+              <p class="lead font-weight-normal">1. Inside which HTML element do we put the JavaScript?</p>
+              <div class="form-check text-white-50 my-2">
+                  <input type="radio" name="q1" value="A" checked>
+                  <label  class="form-check-label" >script tag</label>
+              </div>
+              <div class="form-check text-white-50 my-2">
+                <input type="radio" name="q1" value="B">
+                <label  class="form-check-label">javascript tag</label>
+            </div>
+          </div>
+          <div class="my-5">
+            <p class="lead font-weight-normal">2. Which property is used to find the length of a string? </p>
+            <div class="form-check text-white-50 my-2">
+                <input type="radio" name="q2" value="A" checked>
+                <label  class="form-check-label">find length</label>
+            </div>
+            <div class="form-check text-white-50 my-2">
+              <input type="radio" name="q2" value="B">
+              <label  class="form-check-label">length</label>
+          </div>
+        </div>
+        <div class="my-5">
+            <p class="lead font-weight-normal">3. Which is the correct javascript event? </p>
+            <div class="form-check text-white-50 my-2">
+                <input type="radio" name="q3" value="A" checked>
+                <label  class="form-check-label">onclick</label>
+            </div>
+            <div class="form-check text-white-50 my-2">
+              <input type="radio" name="q3" value="B">
+              <label  class="form-check-label">click</label>
+          </div>
+        </div>
+        <div class="my-5">
+            <p class="lead font-weight-normal">4. Keyword used for deleting properties of an object is.. </p>
+            <div class="form-check text-white-50 my-2">
+                <input type="radio" name="q4" value="A" checked>
+                <label  class="form-check-label">remove</label>
+            </div>
+            <div class="form-check text-white-50 my-2">
+              <input type="radio" name="q4" value="B">
+              <label  class="form-check-label">delete</label>
+          </div>
+        </div>
+       <div class="text-center">
+           <input type="submit" class="btn btn-light">
+       </div>
+      </form>
+        
+    </div>
+</div>
+<script src="TheJavascriptQuiz.js"></script>
+
+</body>
+</html>

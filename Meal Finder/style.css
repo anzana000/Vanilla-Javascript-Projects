@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #00b894;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  width: 70%;
+}
+button {
+  border: none;
+  outline: none;
+}
+.search {
+  font-size: 15px;
+  padding: 5px 10px;
+  margin: 10px 10%;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.random-btn {
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 5% 20%;
+}
+
+.meal {
+  height: 200px;
+  width: 200px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px;
+}
+
+.meal img {
+  width: 100%;
+  height: 100%;
+}
+
+.meal-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.meal:hover .meal-info {
+  opacity: 1;
+}
+
+.single-meal {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.single-meal img {
+  width: 300px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+.single-meal p {
+  padding: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+
+.single-meal ul {
+  list-style: none;
+  background-color: #fff;
+}
+
+.single-meal ul li {
+  color: #00b894;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .meals {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .meals {
+    grid-template-columns: repeat(2, 1fr);
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .meals {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

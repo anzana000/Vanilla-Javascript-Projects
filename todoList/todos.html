@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="todos.css">
+    <title>To do</title>
+
+</head>
+<body>
+<div class="container">
+    <header class="text-center text-light my-4">
+        <h1 class="mb-4">Todo List</h1>
+        <form action="" class="search">
+            <input type="text" class="form-control" name="search" placeholder="search todos...">
+        </form>
+    </header>
+    <ul class="list-group mx-auto todos text-light">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Go to shopping</span>
+            <i class="fas fa-trash delete"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Watch movie!</span>
+            <i class="fas fa-trash delete"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>Play tennis</span>
+            <i class="fas fa-trash delete"></i>
+        </li>
+    </ul>
+    <form action="" class="addTodo text-center my-4">
+
+        <label for="add" class="text-light"><i class="fas fa-plus-circle" style="margin-right: 5px;"></i>Add a new todo...</label>
+        <input type="text" class="form-control m-auto" name="addTodo" id="add">
+    </form>
+</div>
+ <script src="todos.js"></script>   
+</body>
+</html>

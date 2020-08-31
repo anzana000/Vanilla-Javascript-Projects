@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Finder</title>
+  </head>
+  <body>
+    <h1>Meal Finder</h1>
+    <div class="container">
+      <div class="wrapper">
+        <form id="form" type="submit">
+          <input
+            type="text"
+            name=""
+            id="searchMeal"
+            class="search-meal"
+            placeholder="Search meals here.."
+          />
+          <button id="random-btn" class="random-btn">
+            <i class="fas fa-random"></i>
+          </button>
+        </form>
+        <button type="submit" id="search-btn" class="search">Search</button>
+      </div>
+    </div>
+    <div id="resultText"></div>
+    <div class="meals" id="meals"></div>
+    <div class="single-meal" id="single-meal"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

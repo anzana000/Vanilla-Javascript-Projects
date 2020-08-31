@@ -1,0 +1,25 @@
+body{
+    background-color: #2f3542;
+}
+
+.todos li{
+    background-color: rgba(0,0,0,0.2);;
+}
+
+input[type=text],input[type=text]:focus{
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    border: none;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 500px;
+}
+
+.displayNone{
+    display: none !important;
+}

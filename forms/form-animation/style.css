@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    background: #05c46b;
+    transition: background 0.5s ease;
+}
+
+h3{
+    font-size: 25px;
+    letter-spacing: 0.2px;
+   color: rgb(226, 220, 220);
+   position: absolute;
+   top: 35%;
+   left: 45%;
+}
+
+.user-field,
+.email-field,
+.password-field,
+.last-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.user-field i,
+.email-field i,
+.password-field i,
+.last-text i{
+padding: 10px;
+}
+
+.user-field i.arr,
+.email-field i.arr,
+.password-field i.arr{
+   
+    cursor: pointer;
+}
+
+
+.user-field input,
+.email-field input,
+.password-field input,
+.last-text input{
+    
+    flex: 1;
+    outline: none;
+    border: none;
+    height: 100%;
+}
+
+.user-field span,
+.email-field span,
+.password-field span{
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 60px;
+    color: rgb(204, 182, 182);
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+div.inactive{
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 50%);
+}
+
+div.active{
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes shake{
+    0%{transform: translate(-50%, -50%),rotate(0deg);}
+    50%{transform: translate(-50%, -50%),rotate(10deg);}
+    100%{transform: translate(-50%, -50%),rotate(0deg);}
+
+}
